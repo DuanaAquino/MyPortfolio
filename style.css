@@ -1,0 +1,92 @@
+*{
+    background-image: url(imagens/BG-folder/background.svg);
+    background-attachment: fixed;
+
+}
+
+#bioBoard {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.topo {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    align-items: center;
+    margin-left: 5%; 
+    margin-top: 2%;
+}
+
+#foto {
+    margin-left: 1%;
+    margin-bottom: -10%;
+}
+
+#lua {
+    margin-left: 20%;
+
+}
+
+#brilhos01 {
+    margin-left: 10%;
+    margin-top: 2%;
+    opacity: 80%;
+}
+
+#brilhos02 {
+    margin-top: 20%;
+    margin-left: 2%;
+    opacity: 80%;
+}
+
+#estrela01 {
+    margin-top: 20%;
+    margin-left: 2%;
+}
+
+#estrela02 {
+    margin-top: 40%;
+    padding-right: 30%;
+}
+
+#brilhos03 {
+    margin-top: 50%;
+    margin-left: 20%;
+    opacity: 80%;
+}
+
+#nuvens {
+    display:grid;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#buttonsBoard {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    margin-bottom: 300px;
+    margin-left: 90px;
+}
+
+#board {
+    background-image: url(/imagens/windows/buttonsBoard.svg);
+    background-attachment: scroll;
+    background-size: 500px 702px;
+    margin-left: -130px;
+    padding: 13px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    size-adjust: 80%;
+    margin: 600px 25x 5px 200px;
+    padding: 5px 30px 5px 30px;
+    background-color: #7CF0CD;
+}
