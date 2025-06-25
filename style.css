@@ -1,92 +1,187 @@
 *{
-    background-image: url(imagens/BG-folder/background.svg);
-    background-attachment: fixed;
-
+    background-image: url(images/BG-folder/background.png);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Nerko One';
 }
 
-#bioBoard {
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
-    margin-left: 5%;
-    padding: 2%;
-}
+/*                  TOPO                        */
 
-.topo {
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
-    align-items: center;
-    margin-left: 5%; 
-    margin-top: 2%;
-}
-
-#foto {
-    margin-left: 1%;
-    margin-bottom: -10%;
-}
-
-#lua {
-    margin-left: 20%;
-
-}
-
-#brilhos01 {
-    margin-left: 10%;
-    margin-top: 2%;
-    opacity: 80%;
-}
-
-#brilhos02 {
-    margin-top: 20%;
-    margin-left: 2%;
-    opacity: 80%;
-}
-
-#estrela01 {
-    margin-top: 20%;
-    margin-left: 2%;
-}
-
-#estrela02 {
-    margin-top: 40%;
-    padding-right: 30%;
-}
-
-#brilhos03 {
-    margin-top: 50%;
-    margin-left: 20%;
-    opacity: 80%;
-}
-
-#nuvens {
-    display:grid;
+header{  
     display: flex;
-    align-items: center;
-    margin-top: 200px;
+    flex-direction: columns;
+    justify-content: space-evenly;
+}
+#foto{
+    margin: 5rem 0 0 7rem;
+    background: none;
+    width: 11rem;
+    height: 11rem;
+    padding-bottom: 0;
+}
+#brilhos01{
+    margin: 4rem -7rem 0 15rem;
+    background: none;
+    width: 11rem;
+    height: 11rem;
+    animation: opacity 3s linear infinite;
+}
+#lua{
+    margin: 4rem 13rem 0rem -1rem;
+    background: none;
+    width: 12rem;
+    height:12rem;
 }
 
-#buttonsBoard {
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
-    margin-bottom: 300px;
-    margin-left: 90px;
-}
+/*                    BIO                      */
 
-#board {
-    background-image: url(/imagens/windows/buttonsBoard.svg);
-    background-attachment: scroll;
-    background-size: 500px 702px;
-    margin-left: -130px;
-    padding: 13px;
-}
-
-button {
+.bioBoard{
     display: flex;
-    align-items: center;
-    size-adjust: 80%;
-    margin: 600px 25x 5px 200px;
-    padding: 5px 30px 5px 30px;
-    background-color: #7CF0CD;
+    flex-direction: columns;
+    justify-content: space-evenly;    
+    background: none;
+}
+#bioBoard{
+    background-image: url(./images/windows/boardBio.png);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100%;
+    font-size:x-large;
+    text-align: center;
+    color: #2CA49C;
+    width: 22rem;
+    margin: 2rem 6rem 0 0;
+    padding: 4rem 2rem 1rem 1rem;
+    
+}
+#brilhos02{
+    background: none;
+    width: 7rem;
+    height: 7rem;
+    margin: 7rem 5rem 0 5rem;
+    padding-right: 1rem;
+    animation: opacity 5s linear infinite;
+}
+#estrela02{
+    background: none;
+    width: 5rem;
+    height: 5rem;
+    margin: 11rem 15rem 0 -10rem;
+    animation: rotate2 4s linear infinite;
+}
+
+/*                    MAIN BOARD                      */
+
+.mainBoard{
+    display: flex;
+    flex-direction: columns;
+    justify-content: space-evenly;    
+    background: none;
+}
+#board{
+    background-image: url(./images/windows/buttonsBoard.svg);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100%;
+    width: 22rem;
+    height: 40rem;
+    margin: 0 0 0 -4rem;
+    padding: 5rem 2rem 0 1rem;
+}
+#estrela{
+    background: none;
+    width: 12rem;
+    height: 12rem;
+    margin:7rem 0 0 15rem;
+    padding: 0 5rem 0;
+    animation: rotate 4s linear infinite;
+}
+#brilhos03{
+    background: none;
+    width: 6rem;
+    height: 7rem;
+    margin: 8rem 15rem 0 0;
+    padding: 0 5rem 0;
+    animation: opacity 2s linear infinite;
+}
+a{
+    background: none;
+}
+button{
+    background-image: none;
+    background-color: #E7FFF8;
+    color: #2CA49C;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 13rem;
+    height: 2.5rem;
+    padding: .1rem 1rem;
+    border: .2rem solid #2CA49C;
+    border-radius: .7rem;
+    display: inline-block;
+    margin: 1.5rem 0 0 4.2rem;
+    box-shadow: .2rem .2rem .01rem #545454;
+}
+button:hover{
+    background-color: #cee3dc;
+    box-shadow: none;
+}
+
+/*                        FOOTER                        */
+
+#clouds{
+    background-image: url(./images/clouds.png);
+    background-repeat: no-repeat;
+    width: 95rem;
+    height: 60rem;
+    margin-top: -55rem;
+}
+footer > p{
+    text-align: end;
+    color: #2CA49C;
+    background: none;
+    position: absolute;
+    font-size: x-large;
+    top: 80rem;
+    left: 70rem;
+}
+
+/*                           ANIMAÇÃO                   */
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transfom: rotate(-30deg);
+    }
+
+}
+@keyframes rotate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transfom: rotate(30deg);
+    }
+
+}
+@keyframes opacity{
+    0%{
+        opacity: 100%;
+        image-rendering: 1rem 1rem 1rem #FFFF;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
