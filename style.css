@@ -387,7 +387,6 @@ footer > p{
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     body {
-        background-image: url(./images/BG-folder/background2.png);
         margin: 0;
         padding: 0;
     }
@@ -395,7 +394,7 @@ footer > p{
         margin-left: 5rem;
     }
     body{
-        width: 48rem;
+        width: 20rem;
     }
     #foto{
         margin: 3rem 0 0 11rem;
@@ -469,7 +468,7 @@ footer > p{
     }
     #clouds{
         margin: -52rem 9rem 0 15rem;
-        width: 48rem;
+        width: 20rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
