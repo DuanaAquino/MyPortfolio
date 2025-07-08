@@ -1,17 +1,21 @@
 *{
     background-image: url(images/BG-folder/background.png);
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-size: 16px;
     font-family: 'Nerko One';
 }
-
+body{
+    width: 90rem;
+}
 /*                  TOPO                        */
 
 header{  
     display: flex;
     flex-direction: columns;
     justify-content: space-evenly;
+    background: none;
 }
 #foto{
     margin: 5rem 0 0 7rem;
@@ -86,7 +90,7 @@ header{
     background-position: absolute;
     background-size: 100%;
     width: 22rem;
-    height: 40rem;
+    height: 30rem;
     margin: 0 0 0 -4rem;
     padding: 5rem 2rem 0 1rem;
 }
@@ -108,6 +112,7 @@ header{
 }
 a{
     background: none;
+    text-decoration: none;
 }
 button{
     background-image: none;
@@ -120,8 +125,9 @@ button{
     padding: .1rem 1rem;
     border: .2rem solid #2CA49C;
     border-radius: .7rem;
-    display: inline-block;
-    margin: 1.5rem 0 0 4.2rem;
+    display: flex;
+    flex-direction: column;
+    margin: .3rem 0 0 4.2rem;
     box-shadow: .2rem .2rem .01rem #545454;
 }
 button:hover{
@@ -134,18 +140,20 @@ button:hover{
 #clouds{
     background-image: url(./images/clouds.png);
     background-repeat: no-repeat;
-    width: 95rem;
-    height: 60rem;
-    margin-top: -55rem;
+    background-position: center;
+    background-size: cover;
+    width: 90rem;
+    height: 52rem;
+    margin-top: -28rem;
 }
 footer > p{
     text-align: end;
     color: #2CA49C;
     background: none;
-    position: absolute;
     font-size: x-large;
-    top: 79rem;
-    left: 70rem;
+    position: absolute;
+    left: 50rem;
+    top: 86rem;
 }
 
 /*                           ANIMAÇÃO                   */
@@ -189,64 +197,63 @@ footer > p{
 
 /*                           RESPONSIVIDADE                                 */
 
-@media screen and (max-width: 1000px) {
-    *{
-        background-image: url(./images/BG-folder/background2.png);
-        margin: 0;
-        padding: 0;
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    header{
+        margin-left: 2rem;
+    }
+    body{
+        width: 60rem;
     }
     #foto{
-        margin: 3rem 0 0 12rem;
+        margin: 5rem 0 0 12rem;
         width: 13rem;
         height: 13rem;
     }
     #brilhos01{
-        margin: 4rem -7rem 0 24rem;
+        margin: 3rem -7rem 0 24rem;
         width: 11rem;
         height: 11rem;
     }
     #lua{
-        margin: 4rem 13rem 0rem 5rem;
+        margin: 3rem 13rem 0rem 5rem;
         width: 12rem;
-        height:12rem;
+        height: 12rem;
     }
-    #bioBoard{
-        font-size:xx-large;
-        width: 26rem;
-        margin: 2rem 9rem 0 5rem;
-        padding: 5rem 3rem 2rem 2rem;
-        
-    }
-    #brilhos02{
+    .bioBoard{
+        display: flex;
+        flex-direction: columns;
+        justify-content: space-evenly;    
         background: none;
-        width: 7rem;
-        height: 7rem;
-        margin: 7rem -9rem 0 2rem;
-        padding-right: 1rem;
+        margin: 2rem -28rem 0 0;
     }
     #estrela02{
-        background: none;
         width: 7rem;
         height: 7rem;
-        margin: 14rem -30rem 0 -20rem;
+    }
+    #bioBoard{
+        width: 27rem;
+        font-size: xx-large;
+    }
+    .mainBoard{
+        margin: -8rem 0 0 -11rem;
     }
     #board{
         width: 28rem;
         height: 50rem;
-        margin: 0 0 0 -6rem;
+        margin: 12rem 0 5rem -11rem;
         padding: 5rem 2rem 0 1rem;
     }
     #estrela{
         background: none;
         width: 13rem;
         height: 13rem;
-        margin:7rem 0 0 8rem;
+        margin: 15rem 0 0 17rem;
         padding: 0 5rem 0;
     }
     #brilhos03{
         width: 7rem;
         height: 8rem;
-        margin: 8rem -32rem 0 0;
+        margin: 14rem -28rem 0 0;
         padding: 0 5rem 0;
     }
     button{
@@ -260,86 +267,148 @@ footer > p{
         margin: 1.5rem 0 0 4.2rem;
         box-shadow: .2rem .2rem .01rem #545454;
     }
+    #clouds{
+        margin: -50rem 0 0 -2rem;
+        width: 97rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     footer > p{
         font-size: xx-large;
-        top: 93rem;
-        left: 10rem;
-        right: -38rem;
+        top: 99rem;
+        right: -20rem;
+        left: 5rem;
         padding: 0;
     }
 }    
 
-@media screen and (max-width: 767px) {
-    *{
-        background-image: url(./images/BG-folder/background3.png);
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url(./images/BG-folder/background2.png);
         margin: 0;
         padding: 0;
     }
-    #foto{
-        margin: 5rem 0 0 11rem;
-        width: 20rem;
-        height: 20rem;
+    header{  
+        margin-left: 16rem;
+        background: none;
+    }
+    #foto {
+        margin-left: 9rem;
+        width: 12rem;
+        height: 12rem;
+        padding: 3rem;
     }
     #brilhos01{
-        margin: 4rem -7rem 0 8rem;
-        width: 13rem;
-        height: 13rem;
+        width: 11rem;
+        height: 11rem;
+        margin-left: -3rem;
     }
     #lua{
-        margin: 5rem 13rem 0rem 5rem;
+        margin-left: 1rem;
         width: 12rem;
         height:12rem;
     }
-    #bioBoard{
-        background-image: url(./images/windows/boardBio.png);
-        font-size:xx-large;
-        width: 28rem;
-        margin: 4rem -52rem 0 0;
-        padding: 5rem 2rem 1rem 1rem;
-        
+    .bioBoard{
+        text-align: center;
+        margin-left: 9rem;
+        display: flex;
+        flex-direction: columns;
+        justify-content: space-evenly;    
+        background: none;
+    }
+    .mainBoard{
+        margin: -3rem 0 0 2.6rem;
+    }
+    #board{
+        width: 30rem;
+        height: 45rem;
+        margin: 2rem 0 0 -5rem;
+        padding: 5rem 5rem 5rem 5.2rem;
+    }
+    #estrela{
+        width: 12rem;
+        height: 12rem;
+        margin:7rem 0 0 6rem;
+        background: none;
+    }
+    button{
+        padding: .1rem 1rem;
+        margin: 1.5rem 3rem 0 1.5rem;
+    }
+    #clouds{
+        margin: -60rem -5rem 0 -5rem;
+        width: 48rem;
+    }
+    footer > p {
+        top: 92rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        background-image: url(./images/BG-folder/background2.png);
+        margin: 0;
+        padding: 0;
+    }
+    header{  
+        margin-left: 15rem;
+        background: none;
+    }
+    #foto {
+        margin-left: 9rem;
+        width: 20rem;
+        height: 20rem;
+        padding: 3rem;
+    }
+    #brilhos01{
+        width: 13rem;
+        height: 13rem;
+        margin-left: -3rem;
+    }
+    #lua{
+        margin-left: 1rem;
+        width: 14rem;
+        height:14rem;
+    }
+    #bioBoard {
+        font-size: 2rem;
+        width: 30rem;
+        margin: 2rem 18rem 0 8rem;
+        padding: 6rem 2rem 1rem;
     }
     #brilhos02{
+        margin-left: 7rem;
         background: none;
-        width: 7rem;
-        height: 7rem;
-        margin: 7rem -12rem 0 -5rem;
-        padding-right: 1rem;
     }
     #estrela02{
         background: none;
-        width: 7rem;
-        height: 7rem;
-        margin: 16rem -60rem 0 40rem;
+        margin-right: -50rem;
     }
     #board{
-        width: 35rem;
-        height: 55rem;
-        margin: 0 0 0 -6rem;
-        padding: 5rem 7rem 0 1rem;
+        width: 30rem;
+        height: 45rem;
+        margin: 2rem 0 0 -5rem;
+        padding: 5rem 5rem 5rem 5rem;
     }
     #estrela{
+        width: 12rem;
+        height: 12rem;
+        margin:7rem 0 0 6rem;
         background: none;
-        width: 13rem;
-        height: 13rem;
-        margin:7rem 3rem 0 1rem;
-        padding: 0 5rem 0;
-        animation: rotate 4s linear infinite;
     }
-    #brilhos03{
-        width: 7rem;
-        height: 8rem;
-        margin: 14rem -28rem 0 0;
-        padding: 0 3rem 0;
+    button{
+        padding: .1rem 1rem;
+        margin: 1.5rem 3rem 0 1.5rem;
     }
     #clouds{
-        margin: -60rem 0 0 -10rem;
+        margin: -20rem -5rem 0 5rem;
     }
-    footer > p{
-        font-size: xx-large;
+    footer > p {
         top: 105rem;
-        left: -30rem;
-        right: -17rem;
-        padding: 0;
+        left: 2rem;
     }
 }
+
     
