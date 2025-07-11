@@ -1,42 +1,46 @@
-*{
-    background-image: url(images/BG-folder/background.png);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: 'Nerko One';
-}
-body{
-    width: 90rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Nerko One', sans-serif;
 }
 /*                  TOPO                        */
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1rem 0 0;
+  justify-content: center;
+}
+body{
+  background-image: url(images/BG-folder/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100vw;
+}
 header{  
     display: flex;
-    flex-direction: columns;
-    justify-content: space-evenly;
-    background: none;
-    margin-left: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
 }
 #foto{
-    margin: 5rem 0 0 7rem;
     background: none;
     width: 11rem;
     height: 11rem;
-    padding-bottom: 0;
+    margin-top: 2rem;
 }
 #brilhos01{
-    margin: 4rem -7rem 0 15rem;
     background: none;
     width: 11rem;
     height: 11rem;
     animation: opacity 3s linear infinite;
 }
 #lua{
-    margin: 4rem 13rem 0rem -1rem;
     background: none;
-    width: 12rem;
-    height:12rem;
+    width: 9rem;
+    height: 9rem;
     animation: rotate 6s linear infinite;
 }
 
@@ -44,28 +48,25 @@ header{
 
 .bioBoard{
     display: flex;
-    flex-direction: columns;
-    justify-content: space-evenly;    
-    background: none;
-    margin-left: 4rem;
-}
-#bioBoard{
-    background-image: url(./images/windows/boardBio.png);
-    background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: 100%;
-    font-size:x-large;
+    flex-direction: row; 
+    gap: 5rem;
     text-align: center;
-    color: #2CA49C;
-    width: 20rem;
-    margin: 2rem 6rem 0 0;
-    padding: 4rem 2rem 1rem 1rem;
+}
+#bioBoard {
+  background-image: url(./images/windows/boardBio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #2CA49C;
+  font-size: 1.5rem;
+  padding: 3.5rem 3rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
 }
 #brilhos02{
     background: none;
     width: 7rem;
     height: 7rem;
-    margin: 7rem 5rem 0 5rem;
     padding-right: 1rem;
     animation: opacity 5s linear infinite;
 }
@@ -73,88 +74,90 @@ header{
     background: none;
     width: 5rem;
     height: 5rem;
-    margin: 11rem 15rem 0 -10rem;
+    margin-top: 7rem;
     animation: rotate2 4s linear infinite;
 }
 
 /*                    MAIN BOARD                      */
 
-.mainBoard{
+.mainBoard {
     display: flex;
-    flex-direction: columns;
-    justify-content: space-evenly;    
-    background: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
 }
-#board{
+#board {
     background-image: url(./images/windows/buttonsBoard.svg);
     background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: 100%;
-    width: 22rem;
-    height: 30rem;
-    margin: 1.8rem 0 0 0;
-    padding: 5rem 2rem 0 1rem;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 6rem 5rem 4rem 4rem;
+    margin: -2rem 2.8rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
 }
 #estrela{
     background: none;
     width: 12rem;
     height: 12rem;
-    margin:7rem 0 0 15rem;
-    padding: 0 5rem 0;
     animation: rotate 4s linear infinite;
 }
 #brilhos03{
     background: none;
-    width: 6rem;
+    width: 7rem;
     height: 7rem;
-    margin: 8rem 15rem 0 0;
-    padding: 0 5rem 0;
     animation: opacity 2s linear infinite;
 }
 a{
     background: none;
     text-decoration: none;
 }
-button{
-    background-image: none;
-    background-color: #E7FFF8;
-    color: #2CA49C;
-    font-size: 1.5rem;
-    cursor: pointer;
-    width: 13rem;
-    height: 2.5rem;
-    padding: .1rem 1rem;
-    border: .2rem solid #2CA49C;
-    border-radius: .7rem;
-    display: flex;
-    flex-direction: column;
-    margin: .3rem 0 0 3.8rem;
-    box-shadow: .2rem .2rem .01rem #545454;
+button {
+  background-color: #E7FFF8;
+  color: #2CA49C;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 13rem;
+  height: 2.5rem;
+  padding: .1rem .5rem;
+  border: .2rem solid #2CA49C;
+  border-radius: .7rem;
+  box-shadow: .2rem .2rem .01rem #545454;
 }
-button:hover{
-    background-color: #cee3dc;
-    box-shadow: none;
+
+button:hover {
+  background-color: #cee3dc;
+  box-shadow: none;
 }
 
 /*                        FOOTER                        */
 
-#clouds{
-    background-image: url(./images/clouds.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 95rem;
-    height: 60rem;
-    margin-top: -40rem;
+#clouds {
+  background-image: url(./images/clouds.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 15 / 9;
+  margin-top: -25rem;
 }
-footer > p{
-    text-align: end;
-    color: #2CA49C;
-    background: none;
-    font-size: x-large;
-    position: absolute;
-    left: 66rem;
-    top: 85rem;
+
+footer > p {
+  text-align: end;
+  color: #2CA49C;
+  font-size: 1.2rem;
+  z-index: 2; 
+  margin: -4rem 2rem 2rem 0;
 }
 
 /*                           ANIMAÇÃO                   */
@@ -167,7 +170,7 @@ footer > p{
         transform: rotate(30deg);
     }
     100%{
-        transfom: rotate(-30deg);
+        transform: rotate(0deg);
     }
 
 }
@@ -198,287 +201,180 @@ footer > p{
 
 /*                           RESPONSIVIDADE                                 */
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-    header{
-        margin-left: -1rem;
-    }
-    body{
-        width: 64rem;
-    }
-    #foto{
-        margin: 5rem 0 0 12rem;
-        width: 13rem;
-        height: 13rem;
-    }
-    #brilhos01{
-        margin: 3rem -7rem 0 24rem;
-        width: 11rem;
-        height: 11rem;
-    }
-    #lua{
-        margin: 3rem 13rem 0rem 5rem;
-        width: 12rem;
-        height: 12rem;
-    }
-    .bioBoard{
+@media (max-width: 1023px) and (min-width: 768px) {
+    header {
         display: flex;
-        flex-direction: row;   
-        background: none;
-        margin: 5rem 18rem 0 0;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 1rem;
+        gap: 2rem;
     }
-    #estrela02{
-        width: 7rem;
-        height: 7rem;
-        margin-right: -40rem;
-    }
-    #brilhos02{
-        margin-right: 10rem;
-    }
-    #bioBoard{
-        width: 27rem;
-        font-size: xx-large;
-        margin: 0 -5rem 0 -25rem;
-    }
-    .mainBoard{
-        margin: -8rem 0 0 -11rem;
-    }
-    #board{
-        width: 28rem;
-        height: 50rem;
-        margin: 12rem -5rem 5rem -3rem;
-        padding: 5rem 2rem 0 1rem;
-    }
-    #estrela{
-        background: none;
-        width: 13rem;
-        height: 13rem;
-        margin: 15rem 0 0 17rem;
-        padding: 0 5rem 0;
-    }
-    #brilhos03{
-        width: 7rem;
+  
+    #foto{
+        width: 8rem;
         height: 8rem;
-        margin: 25rem -15rem 0 0;
-        padding: 0 5rem 0;
     }
-    button{
-        font-size: 2.5rem;
-        width: 19rem;
+    #brilhos01{
+        width: 6rem;
+        height: 6rem;
+    }
+    #lua{
+        width: 6rem;
+        height:6rem;
+    }
+  
+    .bioBoard {
+        flex-direction: row;
+        gap: 2rem;
+    }
+  
+    #bioBoard {
+      max-width: 90%;
+      font-size: 1.4rem;
+      padding: 3.5rem 4rem 3rem 3rem;
+    }
+    
+    #brilhos02{
+      width: 5rem;
+      height: 5rem;
+      margin: 4rem 0 0 5rem;
+    }
+    #estrela02{
+      width: 5rem;
+      height: 5rem;
+      margin: 4rem 3rem 0 0;
+    }
+    
+    .mainBoard {
+      flex-direction: row;
+      gap: .3rem;
+      margin-top: -2rem;
+    }
+    
+    #board {
+      max-width: 90%;
+      padding: 4rem 3.5rem 3.5rem 3.5rem;
+      margin-right: 0;
+      gap: 1.2rem;
+    }
+    
+    #brilhos03 {
+      width: 8rem;
+      height: 8rem;
+      margin: 0 2rem 4rem 0;
+    }
+    #estrela{
+      width: 8rem;
+      height: 8rem;
+      margin: 0 0 6rem 1.9rem;
+    }
+    
+    button {
+      width: 12rem;
+      max-width: 300px;
+      font-size: 1.3rem;
+      height: 3rem;
+    }
+    
+    #clouds {
+      margin-top: -15rem;
+      aspect-ratio: 15 / 9;
+    }
+    
+    footer > p {
+      font-size: 1rem;
+      margin: -3rem 1rem 1rem 0;
+    }
+  }
+
+@media (max-width: 767px) {
+  header {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container {
+      padding-top: 1rem;
+      margin: 0;
+    }
+    #foto{
+        width: 7rem;
+        height: 7rem;
+    }
+    #brilhos01{
+        width: 4rem;
         height: 4rem;
-        padding: .15rem .5rem;
-        border: .3rem solid #2CA49C;
-        border-radius: .7rem;
-        display: inline-block;
-        margin: 1.5rem 0 0 4.2rem;
-        box-shadow: .2rem .2rem .01rem #545454;
-    }
-    #clouds{
-        margin: -48rem 0 0 0rem;
-        width: 77rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    footer > p{
-        font-size: xx-large;
-        top: 112rem;
-        right: -10rem;
-        left: 5rem;
-    }
-}    
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    header{
-        margin-left: 5rem;
-    }
-    body{
-        width: 48rem;
-    }
-    #foto{
-        margin: 3rem 0 0 11rem;
-        width: 10rem;
-        height: 10rem;
-    }
-    #brilhos01{
-        margin: 3rem -9rem 0 24rem;
-        width: 7rem;
-        height: 7rem;
     }
     #lua{
-        margin: 2rem 5rem 0rem 1rem;
-        width: 7rem;
-        height: 7rem;
+        width: 4rem;
+        height: 4rem;
     }
-    .bioBoard{
-        display: flex;
-        flex-direction: row;   
-        background: none;
-        margin: 3rem -25rem 0 0;
+  
+    .bioBoard {
+        flex-direction: row;
+        gap: 1rem;
     }
-    #estrela02{
-        width: 3rem;
-        height: 3rem;
-        margin-right: -5rem;
+    #bioBoard {
+      max-width: 90%;
+      font-size: .8rem;
+      padding: 3rem 1rem 2.5rem .8rem;
     }
     #brilhos02{
-        margin-right: 1rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    #bioBoard{
-        width: 18rem;
-        font-size: 1.5rem;
-        padding: 3rem 2rem 2rem .5rem;
-        margin: 0 -13rem 0 -24rem;
-    }
-    .mainBoard{
-        margin: -8rem -13rem 0 -11rem;
-    }
-    #board{
-        width: 18rem;
-        height: 35rem;
-        margin: 8rem -15rem 12rem -16rem;
-        padding: 2rem 2rem 4rem 1rem;
-    }
-    #estrela{
-        background: none;
-        width: 5rem;
-        height: 5rem;
-        margin: 15rem -1rem 0 21rem;
-        padding: 0 5rem 0;
-    }
-    #brilhos03{
-        width: 3rem;
-        height: 3rem;
-        margin: 25rem -10rem 0 2rem;
-        padding: 0 2rem 0;
-    }
-    button{
-        font-size: 1.5rem;
-        width: 13rem;
-        height: 2.5rem;
-        padding: .15rem .5rem;
-        border: .2rem solid #2CA49C;
-        border-radius: .7rem;
-        display: inline-block;
-        margin: 1.5rem 0 0 2.6rem;
-        box-shadow: .2rem .2rem .01rem #545454;
-    }
-    #clouds{
-        margin: -52rem 9rem 0 15rem;
-        width: 48rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    footer > p{
-        font-size: large;
-        top: 73rem;
-        right: -5rem;
-        left: 5rem;
-        padding: 0;
-    }
-}    
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    header{
-        margin-left: -5rem;
-    }
-    body{
-        width: 48rem;
-    }
-    #foto{
-        margin: 3rem 0 0 11rem;
-        width: 10rem;
-        height: 10rem;
-    }
-    #brilhos01{
-        margin: 3rem -9rem 0 24rem;
-        width: 7rem;
-        height: 7rem;
-    }
-    #lua{
-        margin: 2rem 5rem 0rem 1rem;
-        width: 7rem;
-        height: 7rem;
-    }
-    .bioBoard{
-        display: flex;
-        flex-direction: row;   
-        background: none;
-        margin: 3rem 10rem 0 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 2rem 0 0 1rem;
     }
     #estrela02{
-        width: 3rem;
-        height: 3rem;
-        margin-right: -19rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 3rem .3rem 0 0;
     }
-    #brilhos02{
-        margin-right: 11rem;
-        width: 3.5rem;
-        height: 3.5rem;
+    
+    .mainBoard {
+      display: flex;
+      flex-direction: row;
+      gap: .15rem;
+      margin-top: -7rem;
     }
-    #bioBoard{
-        width: 18rem;
-        font-size: 1.5rem;
-        padding: 3rem 2rem 2rem .5rem;
-        margin: 0 -7rem 0 -24rem;
+    
+    #board {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;  
+      max-width: 90%;
+      margin: -4rem 0 0 .4rem;
+      padding: 12rem 3rem 11.5rem 2.4rem;
+      gap: .4rem;
     }
-    .mainBoard{
-        margin: -8rem -4.8rem 0 -11rem;
-    }
-    #board{
-        width: 18rem;
-        height: 35rem;
-        margin: 8rem -20rem 12rem -16rem;
-        padding: 2rem 2rem 4rem 1rem;
+    
+    #brilhos03 {
+      width: 3rem;
+      height: 3rem;
+      margin: 3rem 2rem 4rem 0;
     }
     #estrela{
-        background: none;
-        width: 5rem;
-        height: 5rem;
-        margin: 15rem -1rem 0 8rem;
-        padding: 0 5rem 0;
+      width: 3rem;
+      height: 3rem;
+      margin: 5rem 0 6rem 1.9rem;
     }
-    #brilhos03{
-        width: 3rem;
-        height: 3rem;
-        margin: 13rem -12rem 0 5rem;
-        padding: 0 2rem 0;
+    button {
+      width: 6rem;
+      max-width: 300px;
+      font-size: .8rem;
+      height: 1.7rem;
+      border: .15rem solid #2CA49C;
     }
-    button{
-        font-size: 1.5rem;
-        width: 13rem;
-        height: 2.5rem;
-        padding: .15rem .5rem;
-        border: .2rem solid #2CA49C;
-        border-radius: .7rem;
-        display: inline-block;
-        margin: 1.5rem 0 0 2.6rem;
-        box-shadow: .2rem .2rem .01rem #545454;
+  
+    #clouds {
+      margin-top: -11rem;
+      aspect-ratio: 15 / 9;
     }
-    #clouds{
-        margin: -65rem 9rem 0 0;
-        width: 55rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    
+    footer > p {
+      font-size: 1rem;
+      margin: -2.25rem 1rem 1rem 0;
     }
-    footer > p{
-        font-size: large;
-        top: 70rem;
-        right: -33rem;
-        left: 5rem;
-        padding: 0;
-    }
-}   
-
+  }
     
