@@ -306,6 +306,7 @@ footer > p {
     #brilhos01{
         width: 4rem;
         height: 4rem;
+        margin-left: 2rem;
     }
     #lua{
         width: 4rem;
@@ -383,7 +384,6 @@ footer > p {
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        align-items: center;
     }
     .container {
       padding: 0;
@@ -396,6 +396,7 @@ footer > p {
     #brilhos01{
         width: 4rem;
         height: 4rem;
+        margin-left: 2rem;
     }
     #lua{
         width: 4rem;
@@ -410,7 +411,7 @@ footer > p {
     #bioBoard {
       max-width: 70%;
       font-size: .8rem;
-      padding: 2rem 2rem 2rem 2rem;
+      padding: 2.2rem 2rem 2rem 2rem;
     }
     #brilhos02{
       width: 2.5rem;
@@ -474,28 +475,28 @@ footer > p {
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        align-items: center;
     }
     .container {
       padding-top: 1rem;
       margin: 0;
     }
     #foto{
-        width: 7rem;
-        height: 7rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
     #brilhos01{
         width: 4rem;
         height: 4rem;
+        margin-left: 1rem;
     }
     #lua{
         width: 4rem;
         height: 4rem;
     }
-  
     .bioBoard {
         flex-direction: row;
         gap: 1rem;
+        margin-top: -.8rem;
     }
     #bioBoard {
       max-width: 90%;

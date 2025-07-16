@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#header {
+    background-image: radial-gradient(circle, #fa9c9c 0%,#ffbcbc 50%, #d99ef9dd 100%);
+    margin-top: 3.12rem;
+}
+#nameAndTitle h1,h2 {
+    background-color: white;
+    color: rgb(79, 79, 79);
+    width: 37.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    font-family:'Grandiflora One';
+    font-size: 3.12rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-family:'Inclusive Sans';
+    text-transform: lowercase;
+}
+#contact {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+}
+#contactTitle{
+    width: 5.5rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#skillsTitle{
+    width: 4.2rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#languageTitle{
+    width: 7.2rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#linksTitle{
+    width: 3.8rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#contact i{ 
+    width: 1.87rem; 
+    size: 2.5rem;
+    line-height: 1.56rem;
+    margin-left: -1.25rem;
+    color:#fa9c9c;
+}
+#container {
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin: 10rem;
+}
+#sidebar,#content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+#sidebar ul{
+    padding: 1.5rem 0 .4rem 1.1rem;
+    line-height: 2.2rem;
+}
+h3{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #FFFF;
+    margin-top: -1.8rem;
+}
+.card {
+    border: .125rem solid #aeaeaeae;
+    border-radius: .93rem;
+    margin-right: 2.5rem;
+    padding: 1.25rem 2.5rem 1.5rem 2.5rem;
+}
+#aboutMe{
+    border: .125rem solid #aeaeaeae;
+    border-radius: .93rem;
+    padding: 1.25rem 2.5rem;
+}
+#aboutMe h3{
+    width: 6rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#workExperiences{
+    border: .125rem solid #aeaeaeae;
+    border-radius: .93rem;
+    padding: 1.25rem 2.5rem;
+}
+#workExperiences h3{
+    width: 11.5rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+#education{
+    border: .125rem solid #aeaeaeae;
+    border-radius: .93rem;
+    padding: 1.25rem 2.5rem;
+}
+#education h3{
+    width: 6.8rem;
+    padding-left: .3rem;
+    margin-left: -.3rem
+}
+p {
+    font-family: 'Montserrat';
+    line-height: 1.56rem;
+    padding: .8rem 0 .4rem 0;
+}
+ul {
+    font-family: 'Montserrat';
+    line-height: 1.56rem;
+    padding: .5rem 0 .4rem 1.1rem;
+}
+.title{
+    color: #fa9c9c;
+}
+
+#links {
+    list-style-type: none;
+}
+#links i{
+    width: 1.87rem; 
+    size: 2.5rem;
+    line-height: 2.2rem;
+    margin-left: -1.25rem;
+    color:#fa9c9c
+}
+#links a:hover i {
+  color: #d99ef9dd;
+  transform: translateY(-.5rem);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+  color: #d99ef9dd;
+}
+
+
+/*                                    RESPONSIVIDADE                                      */
+
+@media (max-width: 1320px) {
+    #nameAndTitle h1,h2 {
+        width: 30rem;
+    }
+    #container {
+        margin: 5rem 2rem;
+    }
+    #contact li{
+        font-size: .9rem;
+        margin-right: -2rem;
+    }
+    #contact i{ 
+        margin-left: -2rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+    #skills li{
+        font-size: .9rem;
+    }
+    #languages li{
+        font-size: .9rem;
+    }
+    #links li{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 970px){
+    #nameAndTitle h1,h2 {
+        width: 25rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem;
+    }
+    .card{
+        margin-right: 0;
+    }
+    #contact li{
+        text-align: center;
+        line-height: .1rem;
+        padding: 0;
+        margin: .2rem;
+    }
+    #contactTitle{
+        padding-left: .3rem;
+        margin-left: 13.7rem
+    }
+    #aboutMe h3{
+        padding-left: .3rem;
+        margin-left: 13.7rem
+    }
+    #workExperiences h3{
+        padding-left: .3rem;
+        margin-left: 11.5rem
+    }
+    #education h3{
+        padding-left: .3rem;
+        margin-left: 13.5rem
+    }
+    #skillsTitle{
+        padding-left: .3rem;
+        margin-left: 14.5rem
+    }
+    #skills{
+        list-style: none;
+    }
+    #languageTitle{
+        padding-left: .3rem;
+        margin-left: 13rem
+    }
+    #languages{
+        list-style: none;
+    }
+    #linksTitle{
+        padding-left: .3rem;
+        margin-left: 14.5rem
+    }
+    #contactCard{
+        order: 1;
+    }
+
+    #content{
+        order: 2;
+        margin-top: 2.5rem;
+    }
+
+    #skillsCard{
+        order: 3;
+        margin-top: 2.5rem;
+        text-align: center;
+        list-style: none;
+    }
+
+    #languagesCard{
+        order: 4;
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    #linksCard{
+        order: 5;
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+    #sidebar {
+        display: contents;
+    }
+}
+@media (max-width: 650px){
+    #nameAndTitle h1,h2 {
+        width: 12rem;
+    }
+    #container {
+        margin: 3rem 2rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #contactTitle{
+        padding-left: .3rem;
+        margin-left: 6rem
+    }
+    #aboutMe h3{
+        padding-left: .3rem;
+        margin-left: 5.8rem
+    }
+    #workExperiences h3{
+        padding-left: .3rem;
+        margin-left: 2.9rem
+    }
+    #education h3{
+        padding-left: .3rem;
+        margin-left: 5rem
+    }
+    #skillsTitle{
+        padding-left: .3rem;
+        margin-left: 6.8rem;
+    }
+    #languageTitle{
+        padding-left: .3rem;
+        margin-left: 5.2rem;
+    }
+    #linksTitle{
+        padding-left: .3rem;
+        margin-left: 6.8rem;
+    }
+}
+@media (max-width: 374px){
+    #contactTitle{
+        margin-left: 4rem
+    }
+    #aboutMe h3{
+        margin-left: 4rem
+    }
+    #workExperiences h3{
+        margin-left: 1.4rem
+    }
+    #education h3{
+        margin-left: 3rem
+    }
+    #skillsTitle{
+        margin-left: 5rem;
+    }
+    #languageTitle{
+        margin-left: 3.5rem;
+    }
+    #linksTitle{
+        margin-left: 5rem;
+    }
+}
