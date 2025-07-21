@@ -309,7 +309,7 @@ a:hover{
         margin-left: 6.8rem;
     }
 }
-@media (max-width: 374px){
+@media (max-width: 425px){
     #contactTitle{
         margin-left: 4rem
     }
@@ -330,5 +330,58 @@ a:hover{
     }
     #linksTitle{
         margin-left: 5rem;
+    }
+    @media (max-width: 374px){
+    #contactTitle{
+        margin-left: 4.2rem
+    }
+    #aboutMe h3{
+        margin-left: 4rem
+    }
+    #workExperiences h3{
+        margin-left: 1.4rem
+    }
+    #education h3{
+        margin-left: 3rem
+    }
+    #skillsTitle{
+        margin-left: 5rem;
+    }
+    #languageTitle{
+        margin-left: 3.5rem;
+    }
+    #linksTitle{
+        margin-left: 5rem;
+    }
+    @media (max-width: 320px){
+    #contactTitle{
+        margin-left: 4.2rem;
+    }
+    #contactCard{
+        padding: 1rem;
+    }
+    #aboutMe h3{
+        margin-left: 2.5rem
+    }
+    #workExperiences h3{
+        margin-left: -.4rem
+    }
+    #education h3{
+        margin-left: 2rem
+    }
+    #skillsTitle{
+        margin-left: 3rem;
+    }
+    #skills li{
+        margin-left: -1.1rem;
+    }
+    #languageTitle{
+        margin-left: 1.8rem;
+    }
+    #languages li{
+        margin-left: -1rem;
+    }
+    #linksTitle{
+        margin-left: 3.5rem;
     }
 }
