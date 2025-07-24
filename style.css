@@ -587,11 +587,11 @@ nav{
 .container2{
   margin: 2rem 3rem;
 }
-header{
+#headerPortfolio{
   display: grid;
   grid-template-columns: 50% 47%;
   gap: 3rem;
-  background-color: rgba(219, 255, 237, 0.4);
+  background-color: rgba(219, 255, 237, 0.3);
   padding-bottom: 3rem;
   border-radius: 2rem;
   margin-left: 2rem;
