@@ -5,6 +5,7 @@
   font-size: 16px;
   font-family: 'Nerko One', sans-serif;
 }
+/*------------------------------------------------------------LINKTREE---------------------------------------------------------------------*/
 /*                  TOPO                        */
 .container {
   max-width: 1200px;
@@ -559,3 +560,68 @@ footer > p {
       margin: -1.7rem 1rem 0 0;
     }
   }  
+
+
+/*----------------------------------------------------------------PORTFOLIO----------------------------------------------------------------*/
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container2{
+  padding: 1rem 3rem;
+  justify-content: center;
+}
+.languages img{
+  width: 2rem;
+  margin-right: .5rem;
+}
+.menu ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  max-width: 10rem;
+  gap: 1rem;
+  margin: 3rem;
+}
+.container2{
+  margin: 2rem 3rem;
+}
+header{
+  display: grid;
+  grid-template-columns: 50% 47%;
+  gap: 3rem;
+  background-color: rgba(219, 255, 237, 0.4);
+  padding-bottom: 3rem;
+  border-radius: 2rem;
+  margin-left: 2rem;
+}
+.presentation h1{
+  font-family: 'Quicksand';
+  color: #2CA49C;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: .2rem .2rem .01rem #545454;;
+}
+.presentation p{
+  font-size: 1.6rem;
+  color: #2CA49C;
+  text-shadow:.1rem .1rem .01rem #545454;
+}
+#picture{
+  max-width: 30rem;
+  margin: -5rem 2rem 0 0;
+  position: relative;
+}
+#art{
+  position:absolute;
+  max-width: 20rem;
+  top: 20rem;
+  right: 35rem;
+}
+#curiosity{
+  position:absolute;
+  max-width: 18rem;
+  top: 30rem;
+  right: 3.5rem;
+}
