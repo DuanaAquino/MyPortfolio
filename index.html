@@ -15,36 +15,183 @@
 </head>
 <body>
     <nav>
-        <section class="container2">
+        <section class="menu">
             <a class="languages" href="https://www.duana.dev/pt-br"><img src="./images/brazilFlag.svg"></a>
-            <a class="languages" href="https://www.duana.dev"><img src="./images/canadianFlag.png"></a>
+            <a class="languages" href="https://www.duana.dev/en-ca"><img src="./images/canadianFlag.png"></a>
         </section>
         <section class="menu">
             <ul>
-                <li><a href="#presentation"><button>About me</button></a></li>
-                <li><button>Skills</button></li>
-                <li><button>Works</button></li>
-                <li><a href="./linkTree.html"></a><button>Get in touch!</button></li>
+                <li><a href=""><button>About me</button></a></li>
+                <li><a href="#skills"><button>Skills</button></a></li>
+                <li><a href="#works"><button>Works</button></a></li>
+                <!--<li><a href="#timeline"></a><button>My Journey</button></li>-->
+                <li><a href="https://www.duana.dev/linktree" target="_blank"><button>Get in touch!</button></a></li>
             </ul>
         </section>
     </nav>
     <header class="container2" id="headerPortfolio">
         <section class="presentation">
-            <h1 id="presentation">Hello! <br>I'm Duana!</h1>
-            <p>I am a self-taught software developer with a strong background in 3D and 2D art for the gaming and animation industries. 
-            With over nine years of experience as a freelance illustrator and animator, I'm currently pursuing a degree in Game Development and actively working on honing my skills in software development and programming, while exploring emerging technologies. I'm particularly drawn to Cybersecurity and Artificial Intelligence and plan to specialize in these areas as a long-term career. while honing my skills as a software developer, at the IBM's Full-Stack Software Developer Professional Certificate, improving my proficiency in HTML, CSS and JavaScript.
+            <h1 id="presentation">Hello, <br>I'm Duana!</h1>
+            <p>I am a self-taught software developer with a strong <br>background in 3D and 2D art for the gaming and animation industries. 
+            With over nine years of experience as a freelance illustrator and animator, I'm currently pursuing a degree in Game Development and actively working on honing my skills in software development and programming, while exploring emerging technologies. I'm particularly drawn to Cybersecurity and Artificial Intelligence and plan to specialize in these areas as a long-term career.
             </p><br>
         </section>
         <section class="images">
-            <img id="picture" src="./images/profilePic.png" alt="">
-            <img id="art" src="./images/art.png" alt="">
-            <img id="curiosity" src="./images/curiosity.png" alt="">
+            <img id="picture" src="./images/profilePic.png" alt="error">
+            <img id="boardLocation" src="./images/board.png" alt="error">
+            <img id="art" src="./images/art.png" alt="error">
+            <img id="curiosity" src="./images/curiosity.png" alt="error">
+            <img id="presentation-star" src="./images/estrela.png" alt="error">
         </section>
     </header>
     <main>
-        <section>
+        <section class="works" id="works">
+            <h2 class="title">SELECTED WORKS</h2> 
+            <section class="project">
+
+                <div class="project-text">
+                    <h2 class="project-number">01</h2>
+
+                    <p class="project-description"><br>Responsive e-commerce website <br>built with HTML, CSS, and JavaScript.</p>
+                    <h3>PixelCraft Geek Shop</h3>
+
+                    <div class="specifications">
+                        <p>DEVELOPMENT</p><span>2025</span>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <a href="https://pixelcraftgeekshop.netlify.app" target="_blank"><video src="./images/PixelCraft.mp4" autoplay muted loop></video></a>
+                </div>
+            </section>
+            <section class="project">
+
+                <div class="project-text">
+                    <h2 class="project-number">02</h2>
+
+                    <p class="project-description">Web platform developed to connect Brazilian entrepreneurs in Vancouver with newcomers and the local community. <br>Built with HTML, CSS, and JavaScript.</p>
+                    <h3>Brasil ao Norte</h3>
+
+                    <div class="specifications">
+                        <p>DEVELOPMENT</p><span>2025</span>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <a href="https://brasilaonorte.netlify.app" target="_blank"><video src="./images/BrasilAoNorte.mp4" autoplay muted loop></video></a>
+                </div>
+            </section>
+        </section>
+        <section id="skills" class="skills" >
+            <h2 class="title">SKILLS</h2>
+            <div id="languages">
+                <h3>LANGUAGES AND TOOLS</h3>
+                <div class="icons">
+                    <img src="./images/html-5_888909.png" alt="error">
+                    <img src="./images/css_888897.png" alt="error">
+                    <img src="./images/java-script_1199124.png" alt="error">
+                    <img src="./images/python.png" alt="error">
+                    <img src="./images/social_14079340.png" alt="error">
+                </div>
+            </div>
+            <!----
+            <div id="frameworks">
+                <h3>FRAMEWORKS AND LIBRARIES</h3>
+            </div> -->
+            <div id="design">
+                <h3>DESIGN</h3>
+                <div class="icons-design">
+                    <img src="./images/adobe-photoshop_2496742.png" alt="error">
+                    <img src="./images/adobe-illustrator_2496696.png" alt="error">
+                    <img src="./images/adobe_2496825.png" alt="error"> 
+                    <img src="./images/adobe_2496845.png" alt="error"> 
+                    <img src="./images/figma_5968705.png" alt="error">                  
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="title">GET IN TOUCH</h2>
+
+            <form action="https://formspree.io/f/xjkebpbv" method="POST">
+                <input type="name" name="name" placeholder="Your name:">
+                
+                <input type="email" name="email" placeholder="Your email:">
+                
+                <textarea name="message" placeholder="Your message:"></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
 
         </section>
+        <!-------------------------       timeline      
+        <section id="timeline">
+            <h2 class="title">My Journey</h2>
+            <section class="timeline container2">
+                <div class="line-center"></div>
+                <div id="item1" class="reveal-left">
+                    <h3>3D Computer Graphics</h3>
+                    <p>Post Graduate Diploma - 02/2015 ~ 08/2016 <br>
+                        SENAC College, Brazil</p>
+                    <ul>
+                        <li>Assets modelling, rigging, animating and look dev process</li>
+                        <li>Industry-related software Maya, Mudbox, Arnold</li>
+                    </ul>
+                </div>
+                <div id="item2" class="reveal-right">
+                    <h3> </h3>
+                    <p></p>
+                    <ul>
+                        <li>Assets modelling, rigging, animating and look dev process</li>
+                        <li>Industry-related software Maya, Mudbox, Arnold</li>
+                    </ul>
+                </div>
+                <div id="item3" class="reveal-left">
+                    <h3>Cabana Game Studio, Brasilia, Brazil (remote) - 05/2021 ~ 04/2024</h3>
+                    <p>3D Game Artist</p>
+                    <ul>
+                        <li>Responsible for modeling, texturing, rigging, and animating game-ready assets,
+                        such as characters, props and environments, including modular and tileable
+                        assets for the indie project "The Tale of Mara and Moa"</li>
+                        <li>Preparing the assets and creating prefabs for Unity</li>
+                        <li>Project versioning with Fork</li>
+                    </ul>
+                </div>
+                <div id="item4" class="reveal-right">
+                    <h3>CG Asset Creation Diploma - 06/2021 ~ 08/2023</h3>
+                    <p>Think Tank Training Centre, Canada</p>
+                    <ul>
+                        <li>Achieved Diploma with honours (96% GPA)</li>
+                        <li>Project planning and assets development using industry-standard tools that best showcase
+    every creative and technical skill</li>
+                    </ul>
+                </div>
+                <div id="item5" class="reveal-left">
+                    <h3>Roarty Digital Inc., Vancouver, Canada - 05/2023 ~ 04/2024</h3>
+                    <p>2D Game Artist</p>
+                    <ul>
+                        <li>Work in a AAA open-world survival game (LEGO Fortnite)</li>
+                        <li>Responsible for translating 2D concepts from Fortnite style
+    to LEGO style to be used as textures on the game-ready 3D assets</li>
+                        <li>Painting textures on 3D assets using Substance 3D Painter</li>
+                        <li>Unreal Engine</li>
+                    </ul>
+                </div>
+                <div id="item6" class="reveal-right">
+                    <h3>Full Stack Software Developer Professional Certificate - 01/2025</h3>
+                    <p>IBM</p>
+                    <ul>
+                        <li>Software Engineering</li>
+                        <li>Cloud Computing</li>
+                        <li>HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+                <div id="item7" class="reveal-left">
+                    <h3>Game Development Degree - 02/2025</h3>
+                </div>         
+            </section> 
+        </section> --------------------------->
     </main>
+    <script src="script.js"></script>
 </body>
+<footer>
+    <p>© 2025 Duana Aquino. Designed and built with pixels, passion, and persistence in every single line.</p>
+</footer>
 </html>
