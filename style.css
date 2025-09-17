@@ -155,6 +155,7 @@ button:hover {
 
 #footer_linktree {
   text-align: end;
+  font-family: ''Nerko One', sans-serif';
   color: #2CA49C;
   font-size: 1.2rem;
   z-index: 2; 
@@ -591,6 +592,7 @@ nav {
 body{
   background-image: url(./images/BG-folder/BG-site.svg);
   background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 .menu button {
   background: none;
@@ -1022,10 +1024,15 @@ form > button{
 
 /* -------------------------------------------------- FOOTER ------------------------------------------------------------------  */
 
-#footer_portfolio{
+#footer_portfolio > p {
   font-family: 'Quicksand';
   font-size: 1rem;
-  color: #E7FFF8;
+  color: #299a93;
   text-align: center;
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 2rem;
+  background-color: rgba(232, 195, 255, 0.5);
+  backdrop-filter: blur(.2rem);
+  height: 1.5rem;
 }
+
+/*        ----------------------------------------- RESPONSIVIDADE ------------------------------------------------------------ */
